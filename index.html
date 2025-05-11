@@ -1,19 +1,45 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>The Cookbook</title>
+<title>Cookbook-Harlowe</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play New Cookbook.</tw-noscript></noscript></tw-story>
-<tw-storydata name="New Cookbook" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="70B2264B-791D-44F7-9595-5E517BD25764" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">ul {
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Cookbook-Harlowe.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Cookbook-Harlowe" startnode="18" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="70B2264B-791D-44F7-9595-5E517BD25764" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#titleh1 {
+  text-shadow: 0px 1px 1px #4d4d4d;
+	color: #222;
+	font-family: "IM Fell English SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 1;
+}
+
+tw-story {
+  background-color: #4c3e40;
+  color: #d1c5a8;
+}
+
+ul {
     list-style: none;
     margin-left: 0;
     padding-left: 1.2em;
     text-indent: -1.2em;
+}
+
+tw-link{
+  color: #f1e5c1;
+}
+.visited {
+    color: #f1e5c1;
+}
+.visited:hover {
+    color: #00bfff;
 }
 
 li:before {
@@ -33,193 +59,770 @@ li:before {
   text-align: center;
   background-color: white; 
   color: white; 
-  font-size: 14px; }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).on('passageend', function() {
+  font-size: 14px; 
+}
+
+tw-icon {
+  font-size: 55px;
+}
+
+tw-icon {
+  font-size: 55px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).on('passageend', function() {
   if ($('#footer').length === 0) {
     $('<div id="footer">Your footer text goes here</div>').appendTo('tw-story');
   }
-});</script><tw-passagedata pid="1" name="Beginning" tags="" position="900,400" size="100,100">It&#39;s almost closing time and you prepare to close up shop. It takes everything in your body to not to rush to lock the door. If one more customer comes in asking for //Sanguine Desires // you &#39;&#39;will&#39;&#39; set the shop on fire with the patron still in it and go home.
+});
+</script><tw-tag name="header" color="red"></tw-tag><tw-tag name="secret" color="purple"></tw-tag><tw-passagedata pid="1" name="&quot;...You&#39;re right. This book is absolute trash.&quot;" tags="" position="3175,825" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
 
-You look at the clock. 5 more minutes left...
+&quot;I have to say, your attempt to insult me with such dreck is a rather inspired choice. I’m glad to know I’m not the only one who values a story well told. Consider my respect earned. Now, about that cookbook...&quot;
 
-(text-style:&quot;rumble&quot;)[//Ding!// ]
+* [[&quot;Alright...Follow Me.&quot;|&quot;Ugh... What is it about this book?&quot;]]
 
-Dammit. It&#39;s the bell on the shop door. Your eyes roll back in their sockets and your soul //begs// to leave your body. 
+(set: $galescore to it +2)</tw-passagedata><tw-passagedata pid="2" name="10000g" tags="" position="3575,1425" size="100,100">{(if: $100haggle is &quot;true&quot;) [&quot;You haven’t the faintest idea how much this book is worth, do you? How long has this shop been open?&quot;
+* [[&quot;Three Months...&quot; you say hesitantly.|&quot;1000&quot;]] ]}
+(else:)[He inhales so sharply he chokes on his own saliva. &quot;I&#39;ve never encountered a book seller with such perposterous prices!&quot;
 
-A man with shoulder-length brown hair and a well-tailored robe enters the shop. He smiles warmly at you as he begins to browse. He carries himself with a pretentious air, his hands are clasped behind his back as he examines your wares. You&#39;ve seen enough wizards to know one when you see one. You stifle a sigh of frustration. There are two ways this could go: He yammers at you and leaves with nothing, OR gives you an obnoxiously complicated order, yammers at you, but you walk away with 500 gold for your patience.
+His eyebrows hang low over his coffee colored eyes. Gritting his teeth he processes the number in silence. You suspect he&#39;s leaving room for you to lower your price.
 
-* [[&quot;Sir, it&#39;s closing time. Please come back tomorrow.&quot;]]
-* [[Allow him to look around for 10 minutes. That robe looks expensive, maybe he has the money to make it worth your while.]]
+&quot;Would you take 5,000?&quot;
+ 
+* [[&quot;Sorry. It has to be 10,000.&quot;]]
+* [[&quot;A million.|Deny Book]]
+* [[&quot;Deal.&quot;|&quot;1000&quot;]]]
 
-(set: $galescore to 1)
+(set: $Deal to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="3" name="100g" tags="" position="3175,1425" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
 
+He glances around the bookshop in bewilderment. &quot;Oh. I&#39;m so sorry. {(if: $baghead is &quot;true&quot;)[It appears the rotten fumes from your grocery bag have muddled my senses.]} It seems I have accidentally wandered into a latrine and mistaken an arse rag for an ancient, one-of-a-kind, grimoire of a centuries dead archmage.&quot;
 
-</tw-passagedata><tw-passagedata pid="2" name="&quot;Sir, it&#39;s closing time. Please come back tomorrow.&quot;" tags="" position="800,600" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
+A wave of embarassment washes over you.
 
-“My apologies... I realize you would prefer to retire for the evening, but I’ve come at this hour for a very specific reason.” His voice takes on a more serious tone, the lightness fading as he meets your eyes with a hint of urgency.
+* [[Ok...I&#39;ll take 500 gold for it.|500g]]
+* [[That&#39;ll be 10,000. |10000g]]
 
-* [[1. You feel a little nervous. &quot;Okay...&quot;|Allow him to look around for 10 minutes. That robe looks expensive, maybe he has the money to make it worth your while.]]
-(set: $galescore to it -1)</tw-passagedata><tw-passagedata pid="3" name="Allow him to look around for 10 minutes. That robe looks expensive, maybe he has the money to make it worth your while." tags="" position="1000,600" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
-
-The man wanders the shop looking at the books but doesn&#39;t touch anything. He looks unenthused by the titles on the shelves. He moves swiftly through your collection as if he already knows he wont find what he&#39;s looking for.
-
-He seems easy going at a glance however, there&#39;s a strange uneasiness bubbling beneath the surface.
-
-“Hello. I’m Gale...” he begins, his voice smooth, yet carrying an undertone that suggests he’s not here for idle chatter.
-
-* [[&quot;A pleasure, I&#39;m...&quot;]]
-(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="4" name="&quot;A pleasure, I&#39;m...&quot;" tags="" position="900,800" size="100,100">&quot;A pleasure, I&#39;m...&quot;
+(set: $galescore to it -1)
+(set: $100haggle to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="4" name="yourname" tags="" position="3200,400" size="100,100">&quot;A pleasure, I&#39;m...&quot;
 
 (input-box:2bind $name,&quot;=XX=&quot;,1,&quot;Tav&quot;)
-* [[&quot;So, what can I do for you, Gale?&quot;]]
-* [[&quot;So...Gale. What&#39;s so important that you insist on keeping me past close...?]]
-</tw-passagedata><tw-passagedata pid="5" name="&quot;So...Gale. What&#39;s so important that you insist on keeping me past close...?" tags="" position="700,800" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
-
-(set: $galescore to it -1)
-(if: $galescore &lt;=2)[&quot;Well... $name.&quot; He mimics your rudeness, &quot;I&#39;ve heard whispers from some very exclusive circles that you have a collection of rare books at this shop...&quot;
-
-&quot;You&#39;ve heard correct.&quot; You declare in your best customer service voice, “I’ve got some very rare items, like a first edition of //Bluebells by The Lake//, and the entire collection of //Adventures of Theobald//...” You let the titles hang in the air, gauging his reaction, ready to see if your offerings pique his interest.
-
-Gale looks mildly annoyed. “Yes, quite nice indeed... But those aren’t quite what I’m looking for...” 
-
-&quot;So, what do you have in mind?&quot;
-
-&quot;I&#39;m looking for a //cookbook.//&quot;]
-
-* [[&quot;Ah well, perhaps I don&#39;t have what you&#39;re looking for. Here, on the house.&quot; You hand him a copy of &#39;Sanguine Desires&#39;. &quot;This looks more your speed.&quot;]]
-* [[&quot;I don&#39;t know what you mean.&quot;-&gt;&quot;I don&#39;t have a book by that name.&quot;]]
-* [[&quot;If it&#39;s a cookbook you&#39;re looking for I have some very nice ones on that shelf over there.&quot;]]</tw-passagedata><tw-passagedata pid="6" name="&quot;If it&#39;s a cookbook you&#39;re looking for I have some very nice ones on that shelf over there.&quot;" tags="" position="700,1000" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
-
-You can see the hint of a wry smile form.
-
-&quot;While I //do// love to cook, I&#39;m not quite in search of cozy peach cobbler recipes.&quot;
-
-You say nothing.
-
-He sighs, dropping the pretense. “Fine. I won’t beat around the bush. I’ve heard that you’re in possession of the original //Armadel’s Cookbook//. Tell me—do you have it?”
-
-Regrettably, you //do// have that book. You had a feeling it would attract weirdos. Everything from how you acquired it to what&#39;s in it is strange. 
-
-
-* [[You sigh. What is it with this book?|&quot;Ugh... What is it about this book?&quot;]]
-
-(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="7" name="&quot;I don&#39;t have a book by that name.&quot;" tags="" position="900,1000" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
-
-&quot;You&#39;re lying.&quot; Gale says with a frown. &quot;I can practically smell the weave coming off that book.&quot;
-
-&quot;You //smell// it? Fucking wizards...&quot; you mutter with a groan. “And how do I know you’re not with The Order?”
-
-“Because if I don’t get my hands on that book, my name will be at the top of their most wanted list.”
-
-
-* [[&quot;Ugh. What is it about this damn book...?&quot;|&quot;Ugh... What is it about this book?&quot;]] 
-* [[&quot;Wait. Why?&quot;]]
-
-(set: $galescore to it -1)
-(set: $donthavebook to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="8" name="&quot;Ah well, perhaps I don&#39;t have what you&#39;re looking for. Here, on the house.&quot; You hand him a copy of &#39;Sanguine Desires&#39;. &quot;This looks more your speed.&quot;" tags="" position="1100,1000" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
+* [[&quot;So, what can I do for you, Gale?&quot;|what can i do]]
+* [[&quot;So...//Gale//. What&#39;s so important that you insist on keeping me past close...?|past close]]</tw-passagedata><tw-passagedata pid="5" name="sanguine-book" tags="" position="3375,625" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
 
 He glances down at the book and scoffs. He opens the cover and sees a tipped-in page depicting a shirtless vampire ravishing a half-dressed drow. &quot;Do I look like a man who would be interested in this &#39;&#39;trash&#39;&#39;?&quot;
 
-You suppress a smirk, the satisfaction blooming inside you. Insulting a wizard is like candy to you...
+You suppress a smirk. The satisfaction of insulting a wizard is like candy to you.
 
-“//Nightfall’s Temptation// is where the series should have ended!” he declares, his tone sharpening. “Gregon’s death perfectly tied up Melora’s character arc and brought the whole glass dagger mystery to its proper conclusion. Reviving Gregon? That spits in the face of every reader! And to add insult to injury, the illustrations look like they were drawn by a child!”
+“//Nightfall’s Temptation// is where the series should have ended!” he declares indignantly, “Gregon’s death perfectly tied up Melora’s character arc and brought the whole glass dagger mystery to its proper conclusion. Reviving Gregon? That spits in the face of every reader! And to add insult to injury, the illustrations look like they were drawn by a child!”
 
 He taps on the picture, &quot;Look here. He only has four fingers.&quot;
 
 You maintain a stone-cold expression, giving away nothing. You’d never admit it, but his critique is spot on. //Nightfall’s Temptation// was a god-damned masterpiece.
 
-Gale snaps the book shut, pushing it back across the counter toward you with a dismissive flick of his wrist. “As much as I’d enjoy prolonging a conversation about erotic literature with you, I have more pressing matters. Now, about this cookbook...”
+He snaps the book shut, pushing it back across the counter with a dismissive flick of his wrist. “As much as I enjoy a conversation about erotic literature, I have more pressing matters. Now, about this cookbook...”
 
 
-* [[&quot;Ugh... What is it about this book?&quot;|&quot;Ugh... What is it about this book?&quot;]]
-* [[&quot;I don&#39;t know what you mean.&quot;-&gt;&quot;I don&#39;t have a book by that name.&quot;]]
-* [[&quot;...You&#39;re right. This book is absolute trash.&quot;|&quot;...You&#39;re right. This book is absolute trash.&quot;]]
+* [[&quot;Alright... right this way.&quot;|&quot;Ugh... What is it about this book?&quot;]]
+* [[&quot;I don&#39;t know what you mean.&quot;-&gt;no-book-that-name]]
+* [[&quot;...You&#39;re right. This book is trash.&quot;|&quot;...You&#39;re right. This book is absolute trash.&quot;]]
 
-(set: $galescore to it -2)</tw-passagedata><tw-passagedata pid="9" name="&quot;So, what can I do for you, Gale?&quot;" tags="" position="1100,800" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
+(set: $galescore to it -1)</tw-passagedata><tw-passagedata pid="6" name="no-book-that-name" tags="" position="3175,625" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
+
+&quot;You&#39;re lying,&quot; he states curtly. &quot;I can practically smell the weave coming off that book.&quot;
+
+&quot;You //smell// it? Ugh...wizards...&quot; you mutter. “And how do I know you’re not with The Order?”
+
+“Because if I don’t get my hands on that book, my name will be at the top of their most wanted list.”
+
+* [[You sigh. &quot;Follow me.&quot;|&quot;Ugh... What is it about this book?&quot;]]
+* [[&quot;Wait. Why?&quot;]]
+* [[&quot;Nope. No mysterious shit today. OUT.&quot;|ask to leave]]
+
+(set: $galescore to it -1)
+(set: $donthavebook to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="7" name="real-cookbook" tags="" position="2975,625" size="100,100">A muscle in his jaw ticks, though his mouth holds a brittle smile. &quot;While I //do// love to cook, I&#39;m not quite in search of cozy peach cobbler recipes.&quot;
+
+You say nothing.
+
+He sighs, dropping the pretense. “Fine. I won’t beat around the bush. I’ve heard that you’re in possession of the original //Armadel’s Cookbook//. Do you have it?”
+
+Regrettably, you //do// have that book. You had a feeling it would attract weirdos. Everything from how you acquired it to what&#39;s in it is strange. 
+
+* [[You sigh. What is it with this book?|&quot;Ugh... What is it about this book?&quot;]]
+</tw-passagedata><tw-passagedata pid="8" name="&quot;No deal. 10,000.&quot;" tags="" position="2425,1275" size="100,100">His shoulders slump and he backs away from the counter.
+
+(set: $galescore to it -1)
+(if: $galescore is &lt;2)[&quot;I&#39;m very sorry for what I&#39;m about to do but I really must have that book.&quot;
+
+Without further warning, he traps you within a prism. You cannot move or speak. You can only watch helplessly as he takes the book and walks out the door.](else:)[He stares at you for a few moments as if he&#39;s considering something. Clearly deciding against whatever he was thinking about, he bids you farewell and leaves.]
+
+END</tw-passagedata><tw-passagedata pid="9" name="&quot;1000&quot;" tags="" position="3175,1675" size="100,100">{(if: $Deal is &quot;true&quot;)[(text-colour:#ffe066)[◈ Gale Approves.](set: $galescore to it +1)]
+(else:)[(text-colour:#ffe066)[◈ Gale Disapproves.](set: $galescore to it -1)]}
+(if: $Deal is &quot;true&quot;)[He smiles wide, pleased as punch. &quot;Glad we can come to an arrangement.&quot;
+
+Pulling out a little book, he writes something down with a flourish:] 
+(else:) [His disappointment in you is palpible. Sighing, he pulls out a little book and writes something down with a flourish:]
+
+(align:&quot;=&gt;&lt;=&quot;)[&lt;div class=&quot;galescheck&quot;&gt;//Pay to the order of $name...Five-Thousand Gold...//&lt;div&gt;]
+
+Your eyes go wide. You&#39;ve never seen so much money come through your shop in one month let alone one day. 
+
+&quot;Take this to Sword Coast Traders&#39; Bank. They will dispense the funds.&quot;
+
+* [[Try to play it cool. &quot;Thank you.&quot;|cool]]
+
+&lt;style&gt;
+.galescheck {
+color: black;
+font-family: &quot;Beth Ellen&quot;, cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="10" name="closing time" tags="" position="3075,225" size="100,100">(text-colour:#ffe066)[◈ The man disapproves.]
+
+“My apologies. I realize you&#39;d prefer to retire for the evening, but I’ve come at this hour for a very specific reason.”
+
+* [[You feel a little nervous. &quot;Okay...&quot;|look around]]
+* [[&quot;Nope. No mysterious shit today. OUT.&quot;|ask to leave]]
+{(set: $gohome to &quot;true&quot;)}
+{(set: $galescore to it -1)}</tw-passagedata><tw-passagedata pid="11" name="what can i do" tags="" position="3400,400" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
 
 &quot;Well, $name, I&#39;ve heard whispers from some very exclusive circles that you have a collection of rare books at this shop...&quot;
 
-&quot;You&#39;ve heard correct.&quot; You declare in your best customer service voice, “I’ve got some very rare items, like a first edition of //Bluebells by The Lake//, and the entire collection of //Adventures of Theobald//...” You let the titles hang in the air, gauging his reaction, ready to see if your offerings pique his interest.
+&quot;You&#39;ve heard correct!&quot; you declare in your best customer service voice. “I’ve got some very rare items like a first edition of //Julian the Carrot//, and the entire collection of //Adventures of Theobald//...” You let the titles hang in the air.
 
-Gale looks mildly annoyed, though he remains resolute in his politeness. “Yes, quite nice indeed... But those aren’t quite what I’m looking for...” 
+“Julian the //what now//?&quot;
 
-&quot;So, what do you have in mind?&quot;
+&quot;Carrot. He&#39;s a Carrot that goes on adventures.&quot;
+
+&quot;That’s charming, I’m sure. But I’m seeking something a bit more arcane, not fiction about... anthropomorphic root vegetables.&quot;
+
+&quot;Actually, it’s an autobiography, but sure—what do you have in mind?&quot;
+
+&quot;I&#39;m looking for a...//cookbook.//&quot;
+
+You pause. You do, unfortunately, have this “cookbook” and while you&#39;d love to get rid of it, you&#39;d really prefer not to touch it. Or even look at it.
+
+* [[&quot;Ah well, I don&#39;t think I have what you&#39;re looking for.&quot; You hand him a copy of //Sanguine Desires//. &quot;This looks more your speed. It&#39;s on the house.&quot;|sanguine-book]]
+* [[&quot;I don&#39;t know what you mean.&quot;|no-book-that-name]]
+* [[&quot;If it&#39;s a cookbook you&#39;re looking for, I have some very nice ones on that shelf over there.&quot;|real-cookbook]]
+
+(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="12" name="past close" tags="" position="3000,400" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
+(set:$galescore to it -1)
+{(if:$galescore &lt; 3)[&quot;Well... //$name//.&quot; He mimics your rudeness, &quot;I&#39;ve heard whispers from some very exclusive circles that you have a collection of rare books at this shop...&quot;]}
+
+&quot;You&#39;ve heard correct! I’ve got some very rare items like a first edition of //Julian the Carrot//, and the entire collection of //Adventures of Theobald//...” You let the titles hang in the air, gauging his reaction.
+
+“Julian the //what now//?&quot;
+
+&quot;Carrot. He&#39;s a Carrot that goes on adventures.&quot;
+
+&quot;That’s charming, I’m sure. But I’m seeking something a bit more arcane, not fiction about... anthropomorphic root vegetables.&quot;
+
+&quot;Actually, it’s a memoir, but sure—what do you have in mind?&quot;
 
 &quot;I&#39;m looking for a //cookbook.//&quot;
 
-* [[&quot;Ah well, perhaps I don&#39;t have what you&#39;re looking for. Here, on the house.&quot; You hand him a copy of &#39;Sanguine Desires&#39;. &quot;This looks more your speed.&quot;]]
-* [[&quot;I don&#39;t know what you mean.&quot;-&gt;&quot;I don&#39;t have a book by that name.&quot;]]
-* [[&quot;If it&#39;s a cookbook you&#39;re looking for I have some very nice ones on that shelf over there.&quot;]]
+You pause. You do, unfortunately, have this “cookbook” and while you&#39;d love to get rid of it, you&#39;d really prefer not to touch it. Or even look at it.
 
-(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="10" name="&quot;Wait. Why?&quot;" tags="" position="700,1200" size="100,100">Gale&#39;s expression darkens, &quot;That&#39;s not something I can share with you. Rest assured, once I have the book, all of it will be irrelevant.&quot;
+* [[&quot;Ah well, perhaps I don&#39;t have what you&#39;re looking for. Here, on the house.&quot; You hand him a copy of //Sanguine Desires//. &quot;This looks more your speed.&quot;|sanguine-book]]
+* [[&quot;I don&#39;t know what you mean.&quot;|no-book-that-name]]
+* [[&quot;If it&#39;s a cookbook you&#39;re looking for I have some very nice ones on that shelf over there.&quot;|real-cookbook]]</tw-passagedata><tw-passagedata pid="13" name="&quot;Three Months...&quot;" tags="" position="3650,1675" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
 
-As a peddler of dubious wares, you are no stranger to morally ambiguous—or morally bankrupt—clientele, but something about the shift in demeanor makes you uneasy.
+&quot;//Three months?//&quot; he stops himself, &quot;Oh, who am I to judge someone&#39;s ambitions?&quot;
 
-* [[&quot;You know what? The less I know the better.&quot;|&quot;Ugh... What is it about this book?&quot;]]
+With a soft sigh, he looks down at his feet and collects himself. &quot;I apologize. I&#39;m a mite bit stressed at the moment. A book like this is worth 5,000. I will pay you that much. And, if you need help appraising your wares in the future, head to the Waterdeep Library. Ask for Manar, she&#39;s a gifted historian and honest appraiser.&quot;
 
-(set: $secret to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="11" name="&quot;Ugh... What is it about this book?&quot;" tags="" position="1100,1200" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
+* [[&quot;That&#39;s very kind of you. Thanks...&quot; |&quot;1000&quot;]]
+(set: $galescore to it +2)</tw-passagedata><tw-passagedata pid="14" name="&quot;Ugh... What is it about this book?&quot;" tags="" position="3375,825" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
 
 You gesture for Gale to follow, leading him behind the counter and into the dimly lit backroom.
 
-[“I don’t usually let patrons back here. (if: $donthavebook is &quot;true&quot;)[But I’d rather not have any other wizards ‘smelling’ my books,” you mutter, scanning the cluttered space for something to cover his eyes.]]
+{(if: $donthavebook is &quot;true&quot;)[“I don’t usually let patrons back here. But I’d rather not have any other wizards ‘smelling’ my books.” You scan the cluttered space for something to cover his eyes.](else:)[“I don’t usually let patrons back here.&quot; You scan the cluttered space for something to cover his eyes.]}
 
 &quot;Shit... I don&#39;t have a blindfold. Er... Can you, like, blind yourself or something?&quot;
 
-Gale folds his arms, raising an eyebrow. “What?&quot;
+He folds his arms. “What?&quot;
 
-&quot;Just, like, cast a color splash spell or whatever?&quot;(if: $galescore is &gt;3)[
+&quot;Just, like, cast a...color...splash spell?&quot;
 
-Gale smiles at you with pity, your attempt to speak about magic is endearing to him. &quot;You haven&#39;t a clue what you&#39;re talking about do you?&quot;](else:)[
+His mouth hangs open for a moment, and he raises his eyebrows. &quot;Do you mean color //spray//?&quot;
 
- His eyebrows raise in disbelief, &quot;Do you mean color //spray//?&quot;
+&quot;Yeah. That.&quot;
 
-&quot;Sorry...&quot; you mumble, &quot;I&#39;m rubbish with magic... But yeah. That.&quot;
+He gapes for a few moments, clearly waiting for you to reveal that you&#39;re joking. &quot;You&#39;d really have me color spray myself in the //face//?!”
 
-Gale stares at you for a few moments, waiting for you to reveal that you&#39;re joking. But you don&#39;t. &quot;You&#39;d really have me color spray myself in the //face//?!”]
+&quot;Look, I can&#39;t risk you seeing my stash. I don&#39;t want to tempt you into breaking into my home to steal my merchandise.&quot;
 
-You meet his gaze, resolute. &quot;Look, I can&#39;t risk you seeing my stash. I don&#39;t want to tempt you into breaking into my home to steal my merchandise.&quot;
+Clearly unimpressed by your problem solving, he gestures vaguely with one hand, his voice dry, “How about I just... turn around?”
 
-He&#39;s clearly unimpressed by your problem solving. He gestures vaguely with one hand, his voice dry, “How about I just... turn around?”
+Upon a second inspection you spot a cloth bag draped over some crates...
 
-You spot a cloth bag draped over some crates...
+* [[&quot;Fine. Turn around.&quot;|Retrieve the book.]]
+* [[Throw the bag to him. &quot;Put this on your head.&quot;|baghead]]
 
-* [[&quot;Fine. Turn around.&quot;]]
-* [[You throw Gale the bag. &quot;Put this on your head.&quot;]]
+(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="15" name="&quot;Wait. Why?&quot;" tags="secret" position="2975,825" size="100,100">His expression hardens. “That’s not something I can share with you but, rest assured, once I have the book all of it will be irrelevant.&quot;
 
-(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="12" name="&quot;...You&#39;re right. This book is absolute trash.&quot;" tags="" position="900,1200" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
+As a peddler of dubious wares, you are no stranger to morally ambiguous clientele, but something about the shift in demeanor makes you uneasy.
 
-&quot;I have to say, your attempt to insult me with such dreck—it&#39;s a rather inspired choice. I’m glad to know I’m not the only one who values a story well told. Consider my respect earned. Now, about that cookboook...&quot;
+* [[&quot;You know what? The less I know the better.&quot;|&quot;Ugh... What is it about this book?&quot;]]
+* [[&quot;Nope. No mysterious shit today. OUT.&quot;|ask to leave]]
 
-* [[Alright...|&quot;Ugh... What is it about this book?&quot;]]
+(set: $secret to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="16" name="500g" tags="" position="3175,1550" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
 
-(set: $galescore to it +2)</tw-passagedata><tw-passagedata pid="13" name="You throw Gale the bag. &quot;Put this on your head.&quot;" tags="" position="1200,1400" size="100,100">He glances down at the bag, then back at you, he hesitates.
+&quot;I&#39;ve spent more than that on lunch.&quot;
 
-&quot;It&#39;s fine, it&#39;s just the bag I use for the market.&quot; You assure him, your tone light and unbothered.
+* [[&quot;1000&quot;]]
 
-With a reluctant sigh he puts the bag over his head. A shiver courses through him, and he lets out a low, displeased groan.  “It reeks of... rotting onions. Have you ever washed this? Wait—did you recently buy //meat//? Because... it’s damp in here. Unpleasantly so.”
+(set: $galescore to it -1)</tw-passagedata><tw-passagedata pid="17" name="look around" tags="" position="3275,225" size="100,100">(text-colour:#ffe066)[◈ The man approves.]
+
+The man wanders the shop looking unenthused by the titles on the shelves. Moving swiftly through your collection, he seems as if he already knows he wont find what he&#39;s looking for. At a glance, there&#39;s a strange uneasiness bubbling beneath his calm demeanor. Every so often he takes a furtive look out the windows.
+
+{(if: $gohome is &quot;true&quot;)[&quot;By the way, my name is Gale...” he says extending his hand. His voice, while amicable, suggests he’s not here for idle chatter.](else:)[“Hello. I’m Gale.”  he says extending his hand, his voice, while amicable, suggests he’s not here for idle chatter.]}
+
+* [[&quot;Okay.&quot;]]
+* [[&quot;A pleasure, I&#39;m...&quot;|yourname]]
+
+(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="18" name="Beginning" tags="" position="3175,50" size="100,100">It&#39;s almost closing time and you prepare to close up shop. It takes everything in your body not to rush to lock the door. If one more customer comes in asking for //Sanguine Desires // you //will// set fire to the shop with the patron still inside and go home.
+
+With five more minutes to go, you grab the broom to begin sweeping when--
+
+(text-style:&quot;shudder&quot;)[&#39;&#39;//Ding!//&#39;&#39;]
+
+Dammit. It&#39;s the bell on the shop door. Your eyes roll back in their sockets and your soul begs to leave your body. 
+
+A man enters. He smiles warmly at you as he begins to browse, his hands clasp behind his back as he examines your wares. 
+
+You quietly scoff as you assess the customer. You&#39;ve seen enough wizards to know one when you see one, but he seems different from the usual struggling Blackstaff apprentices that frequent your shop. The robe he&#39;s wearing is fancy; likely stitched with some rare thread you&#39;re too uncultured to know the name of. The top portion of his hair is pulled back. He probably has some magical creature tie it back for him every morning. Probably uses that glowing hand they all love to sip his tea. Oh yes, you know his type. He has a tower--maybe //two//. Wizards. Always so excessive…
+
+Pushing your prejudices aside, you see a potential opportunity. There are two ways this could go: He talks your ear off and leaves without buying anything. Or he gives you an obnoxiously complicated task, talks your ear off, but you go home with heavier pockets.
+
+* [[&quot;Sir, it&#39;s closing time. Please come back tomorrow.&quot;|closing time]]
+* [[Allow him to look around for ten minutes. |look around]]
+
+(set: $galescore to 1)
+</tw-passagedata><tw-passagedata pid="19" name="Retrieve the book." tags="" position="3375,1075" size="100,100">(text-style:&quot;smear&quot;)[You pry up a loose board and pull out a book the color of the sky at the last breath of twilight: a deep, heavy blue, the final shade before the sun is swallowed by the sea&#39;s dark horizon.
+
+There is no title on the cover, only a black diamond-shaped window. And perhaps “black” isn’t the right word. The shape isn’t merely dark; it devours light, a void rather than a color. Within it, five red points swell with light, not like stars, but like something watching from a great, impossible distance. They shift as you look at them, some receding, others looming closer, as though space itself folds and unfolds within this flat surface. You know it doesn&#39;t make sense but there is a worrisome feeling that these lights //know you//.
+
+The moment your fingers brush the book&#39;s surface your stomach drops. You sense the unmistakable feeling that you&#39;ve forgotten something. Like waking from a dream and knowing you left a piece of yourself behind. 
+
+And you will pay for it.]
+
+* [[Here it is...]]
+
+&lt;style&gt;
+tw-story {
+  background-color: #000b14;
+  color: #ff2e2e;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="20" name="cool" tags="" position="3650,1850" size="100,100">&quot;Doesn&#39;t it unsettle you?&quot; You pocket the paper as you slide the book toward him.
+
+&quot;What?&quot; He barely glances at you as he inspects the pages again.
+
+&quot;The way it feels.&quot;
+
+He pauses, his fingers skim the cover as he tucks the book under his arm. &quot;The way it //feels//?&quot;
+
+&quot;Yeah, that heaviness. Kinda feels judgmental or something. Like it personally knows you?”
+
+He adjusts his collar, already half-turned toward the door. &quot;Oh it&#39;s scarcely worth a thought, these old texts become less intimidating the more time you spend around them. Dry? Certainly. Unsettling? Please. You should see the ones that bite.&quot;
+
+With the transaction complete, he turns to go but the moment his fingers graze the doorknob, a psychic screech rattles through the marrow of your bones. A storm of black tendrils erupt from the book. Slick and writhing, they snare the wizard&#39;s limbs and coil around his torso like hungry serpents.
+
+Anxiety sends your mind scrambling to make distance from the sight in front of you and your head begins to swim.
+
+* [[Grab the broom.|broom]]
+* [[Punch it.|punch]]
+* [[Go for the chair behind the counter.|chair]]
+* [[Give in to the lightheadedness.|memory]]</tw-passagedata><tw-passagedata pid="21" name="baghead" tags="" position="3600,950" size="100,100">He glances down at the bag, then back at you and hesitates with uncertainty.
+
+&quot;It&#39;s fine,&quot; you assure him. &quot;It&#39;s just the bag I use for the market.&quot;
+
+He puts the bag over his head and shivers out a low, displeased groan. “It reeks of... rotting onions. Have you ever washed this? Wait—did you recently buy //meat//? Because it’s...quite damp in here. Unpleasantly so.”
 
 &quot;Do you want to see the book or not?!&quot;
-(if: $galescore is &gt;3)[&quot;You&#39;re lucky I like you.&quot;]
-(else:)[&quot;//Fine//. Just get the book but make it quick. I&#39;d hate to dirty your putrid shopping bag with my sick...&quot;]
 
-[[Retrieve the book.]]
+&quot;Fine! Just get the book but make it fast. I&#39;d hate to dirty your putrid shopping bag with my sick.&quot;
 
-(set: $baghead to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="14" name="Untitled Passage" tags="" position="1300,1100" size="100,100">(set: $galescore to it +10)
+* [[Retrieve the book.]]
 
-[[&quot;Ugh... What is it about this book?&quot;]] </tw-passagedata><tw-passagedata pid="15" name="Retrieve the book." tags="" position="1100,1600" size="100,100">(if: $baghead is &quot;true&quot;)[Gale takes off the bag and glares at you. He wipes a mysterious brown goo off his face before placing his hand on the book.]
+(set: $baghead to &quot;true&quot;)
+</tw-passagedata><tw-passagedata pid="22" name="7000" tags="" position="3375,1425" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
 
-“You do realize this isn’t actually a cookbook, don’t you?” you inform him.
+&quot;3,000.&quot;
 
-“Indeed it is not. The original title was //&#39;Wer Auquaz Donoap Di Wer Nao Acht Shio Ui Tsairaaha&#39;//, which translates to &#39;The Mystic Path of The Wise Upon All is Built.&#39; It’s a grimoire of very old rituals, assembled like a book of recipes. The name was so long, everyone just called it a cookbook.” You watch his expression shifts from awe to intrigue, as the weight of the book settles in.
+[[ &quot;6,000.&quot;]]
+(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="23" name=" &quot;6,000.&quot;" tags="" position="3375,1675" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
 
-With a delicate touch, he opens the book and flips through the pages, his excitement palpable. “I&#39;ll be honest, I had my doubts about your shop. I was prepared for yet another knock-off. But this is actually written in Armadel’s hand. You can see the signature right here!&quot; His enthusiasm spills over. &quot;Oh, this is... most beautiful.”
+&quot;5,000 gold. Final offer.&quot;
 
-He pauses and looks you up and down. &quot;No offense, but you don&#39;t look like the type who would seek out a book like this. How were you able to acquire it?”
+You study him carefully. The tightness in his jaw, the flicker of desperation in his eyes. He’s at his limit. He can’t afford to go higher. But could someone else?
 
-Boastful Brag: 
-Humorous Deflection: 
-Candid Confession:</tw-passagedata><tw-passagedata pid="16" name="&quot;Fine. Turn around.&quot;" tags="" position="1000,1400" size="100,100">
+The last owner clearly wanted to get rid of it. Whatever secrets it holds, they come at a cost beyond gold. But for 5,000, you’re more than happy to let it burden someone else.
 
-[[Retrieve the book.]]</tw-passagedata></tw-storydata>
+&quot;Deal.&quot;
+
+You extend your hand. He clasps it firmly, a touch colder than you expect. A strange weight settles in the air between you, heavy with unspoken consequences. Then, just as quickly, it’s gone.
+
+* [[&quot;Glad to do business with you.&quot;|&quot;1000&quot;]] 
+(set: $Deal to &quot;true&quot;)
+(set: $galescore to it +1)</tw-passagedata><tw-passagedata pid="24" name="ask to leave" tags="" position="2900,225" size="100,100">He opens his mouth as if to say something but sighs in resignation and leaves the bookshop.
+
+* [[You lock up.]]
+
+(set: $galescore to it -1)</tw-passagedata><tw-passagedata pid="25" name="You lock up." tags="" position="2750,225" size="100,100">(text-style:&quot;rumble&quot;)[//Bong! Bong! Bong!//]
+
+An alarm bell rips you from sleep. What is it now?! You lunge from your bed, heart pounding, already bracing for the worst. An invasion? Another tidal wave? The past seven days have been a relentless gauntlet of disaster after disaster.
+
+You rush to your door and glance skyward. There are no flames, no crashing waves. Just the tolling of the clock tower. Thank the gods.
+
+You exhale and your legs begin to steady but exhaustion lingers. Each crisis has been resolved, somehow, by //someone//, but the constant uncertainty whittles away at your spirit. Perhaps it explains the disturbing nightmares that have haunted you every night.
+
+A newspaper seller’s voice cuts through the morning fog: &quot;Read all about it! Wonder of Waterdeep identified!&quot;
+
+You flip a coin to the child in exchange for a paper. Your face goes slack at the headline:
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(font:&#39;Impact&#39;)[WATERDEEP HERO IDENTIFIED AS GALE ‘THE WALKING APOCALYPSE’ DEKARIOS]]
+
+Beneath the bold text is a sketch of //his// face—the wizard you met just last week!
+
+You’d expect a celebrated savior of Waterdeep to look triumphant, maybe even a little smug. But the man in the illustration? He looks miserable.
+
+END
+</tw-passagedata><tw-passagedata pid="26" name="Here it is..." tags="" position="3375,1275" size="100,100">(if: $baghead is &quot;true&quot;)[Gale takes off the bag and glares at you. He wipes a mysterious brown goo off his face before placing his hand on the book.
+
+“You //do// realize this isn’t actually a cookbook, don’t you?” you inform him.
+
+“Indeed it is not. The original title was //&#39;Wer Auquaz Donoap Di Wer Nao Acht Shio Ui Tsairaaha&#39;//, which translates to &#39;The Mystic Path of The Wise Upon Which All is Built.&#39;&quot;
+
+You frown at the book. Of course it would have a spooky cryptic name to match it&#39;s spooky cryptic cover. 
+
+You watch his expression shift from awe to intrigue as the weight of the book settles in. &quot;It’s a grimoire of very old rituals assembled like a book of recipes. The name was so long, everyone just called it a cookbook.” 
+
+With a delicate touch, he opens the book and flips through the pages. “I&#39;ll be honest, I had my doubts about your shop. I was prepared for yet another knock-off. But this is most certainly the real thing.&quot;
+
+As Gale prattles on, something prickles under your skin. You want him to put the book down. No. You want him to take it? Or leave it alone. Or hand it back? You don&#39;t know what you want, only that every second he touches it, your agitation grows. It&#39;s like your nerves are being plucked for every page he turns, and you have no idea why. You flinch as he snaps the book shut.
+
+&quot;How much do you want for it?&quot; He asks.
+](else:)[
+“You //do// realize this isn’t actually a cookbook, don’t you?” you inform him.
+
+“Indeed it is not. The original title was //&#39;Wer Auquaz Donoap Di Wer Nao Acht Shio Ui Tsairaaha&#39;//, which translates to &#39;The Mystic Path of The Wise Upon Which All is Built.&#39;&quot;
+
+You frown at the book. Of course it would have a spooky cryptic name to match it&#39;s spooky cryptic cover. 
+
+You watch his expression shift from awe to intrigue as the weight of the book settles in. &quot;It’s a grimoire of very old rituals assembled like a book of recipes. The name was so long, everyone just called it a cookbook.” 
+
+With a delicate touch, he opens the book and flips through the pages. “I&#39;ll be honest, I had my doubts about your shop. I was prepared for yet another knock-off. But this is most certainly the real thing.&quot;
+
+As Gale prattles on, something prickles under your skin. You want him to put the book down. No. You want him to take it? Or leave it alone. Or hand it back? You don&#39;t know what you want, only that every second he touches it, your agitation grows. It&#39;s like your nerves are being plucked for every page he turns, and you have no idea why. You flinch as he snaps the book shut.
+
+&quot;How much do you want for it?&quot; He asks.]
+
+* [[&quot;100 gold.&quot;|100g]]
+* [[&quot;7,000 gold.&quot;|7000]]
+* [[&quot;10,000 gold.&quot; |10000g]]
+* {(link-style: (text-colour: &quot;purple&quot;))[(font: &quot;Chiller&quot;)[(text-style: &quot;rumble&quot;)[ [[&quot;STOP TOUCHING IT&quot;]]]]]}</tw-passagedata><tw-passagedata pid="27" name="&quot;STOP TOUCHING IT&quot;" tags="" position="2900,1400" size="100,100">The man jumps as you slap the book out of his hands. Did you really just do that? You look to Gale grasping for an explanation for how insane you must look. “I don&#39;t think I can part with it.”
+
+He crouches slowly to retrieve the book. “Look, I understand your hesitation. But I would like to impress upon you, as gently as I can, that if I leave without this book, there will be consequences beyond my personal inconvenience. I can&#39;t go into details but let&#39;s just say it will be very disruptive.&quot;
+
+He gently returns the book to you. &quot;Now, there must be //something// I can offer you to take this off your hands?&quot;
+
+* [[Deny Book]]
+* [[A date.]]
+* [[&quot;100 gold.&quot;|100g]]
+* [[&quot;7,000 gold.&quot;|7000]]
+* [[&quot;10,000 gold.&quot; |10000g]]</tw-passagedata><tw-passagedata pid="28" name="blackout" tags="" position="3175,2000" size="100,100">Through the cotton wadding that is now your head, someone is singing a song.
+
+“...//Crushed a Masked Lord flat to bone...They say he still peeks out from her stone cheeks and//—OH, thank the gods you’re not dead!” Gale says in genuine relief. “I was already imagining several morbid outcomes... most of which ended with me starving to death, trapped in a locked bookshop, slowly going mad as I watched the owner decompose.”
+
+&quot;How long have I been out?&quot; You groan, clutching your head. Your skull feels like someone tried to split it open with the entire fifty-volume set of //Julian the Carrot//.
+
+&quot;Hard to say—judging by the light, maybe two hours? I was starting to run out of drinking songs to keep myself entertained.&quot;
+
+You look up from the floor and are met again by the sight of tentacles snaring the wizard’s torso. &quot;//--Dark and empty!//&quot; You hiss through your teeth. Gale stands composed, as if being magically strangled was no more than a mild inconvenience. You&#39;d make a beeline for the door if your senses weren&#39;t still dulled by the blackout fog clinging to your mind.
+
+&quot;What are those awful things?&quot;
+
+&quot;How do you sell rare magical texts and not know what Evard&#39;s Black Tentacles looks like?&quot; 
+
+&quot;Listen, I just sell the books. I don&#39;t actually know what any of this is.&quot;
+
+&quot;Well, the book is under a defensive enchantment,&quot; he explains sharply. &quot;Designed to lash out if handled incorrectly. Which, it seems, we have achieved spectacularly.&quot;
+
+* [[&quot;Okay, so how do we get you out?&quot;|getuout]]
+* [[&quot;Maybe I can find whoever enchanted the book?&quot;|findenchant]]
+* [[&quot;Can&#39;t you magic your way out?&quot;|useurmagic]]
+
+(set: $blackout to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="29" name="tentacle help" tags="" position="2425,1150" size="100,100">You shuffle forward, terror sucking the breath out of your chest. You approach Gale who is watching you calmly under the restraints. 
+
+Your hands tremble as you reach for the tentacles, fingertips just shy of contact.
+
+Your breath quickens into short, sharp gasps you can&#39;t control and the room tilts.
+
+&quot;$Name, are you...alright?&quot; Gale&#39;s voice cuts through the haze, distant and warped.
+
+You feel a hot wave over you face followed by spinning and then nausea. You double over and lose your lunch right onto the poor wizard’s shoes.
+
+
+
+(set: $barf to &quot;true&quot;) </tw-passagedata><tw-passagedata pid="30" name="Untitled Passage" tags="" position="2425,1025" size="100,100">
+&quot;How do you own a magical bookshop and not know what spell this is?&quot;
+
+&quot;Listen, I just sell the books. I don&#39;t actually know anything about magic.&quot;
+
+He raises an eyebrow. “It goes beyond not knowing. I think you might have an actual phobia.”I think we’re dealing with something closer to a full-blown phobia. A visceral, possibly unconscious fear of magic itself.</tw-passagedata><tw-passagedata pid="31" name="header" tags="header" position="2950,50" size="100,100">{&lt;div id=&quot;titleh1&quot;&gt;The Cookbook - Chapter I&lt;/div&gt;
+(append:?sidebar)[(link: &quot;🏡&quot;)[(restart:)]]
+(append:?sidebar)[(link: &quot;🔁&quot;)[(load-game: &quot;Load&quot;)]]
+(append:?sidebar)[(link: &quot;💾&quot;)[(if:(save-game: &quot;Load&quot;))[✅] (else:) [Save failed.]]]
+(append:?sidebar)[Your Gale Score: (print: $galescore)]
+&lt;style&gt;
+@import url(&#39;https://fonts.googleapis.com/css2?family=Beth+Ellen&amp;family=Henny+Penny&amp;family=IM+Fell+English+SC&amp;family=Water+Brush&amp;display=swap&#39;);
+&lt;/style&gt;}
+
+</tw-passagedata><tw-passagedata pid="32" name="memory" tags="" position="3175,1850" size="100,100">(text-style:&quot;blur&quot;)[(t8n: &quot;blur&quot;)[//In the swirling fog of your mind, something drifts forward with a quiet sense of encouragement. A desire to be aknowledged. Something unfolds beneith you and the voidspace in your mind grows cooler.//]
+
+(link:&quot;&#39;Where am I?&#39;&quot;)[(t8n: &quot;blur&quot;)[ //There is a scent of damp dark earth, grit, and minerals decades abandoned by sunlight. Somewhere deep and forgotten. You&#39;re not in the bookshop anymore. The hardwood below you is now a bed of dried leaves and cold clay.// 
+
+(link:&quot;Inspect yourself.&quot;)[(t8n: &quot;blur&quot;)[//Your eyes and nose are puffy and coated with a wet slime. In your hand is a toy duck stuffed with wool.// 
+
+//The sting of a rash forms on your thigh, just above one soft roll and below the cuff of your shorts. It itches like the first, and only time, you tried to use the rope swing your papa made. //
+
+(link:&quot;Look for help.&quot;)[(t8n: &quot;blur&quot;)[//Above you the light dims as a black shape blocks out the sky. And then it&#39;s just you and the dark. You cry for help but the only reply is your own voice returned to you. You know there is a way out, but it is also how you got here. You musn&#39;t do that again...//
+
+(text-rotate-z:180)[(text-style:&quot;expand&quot;)[[[...The Lady Dreaming...slumped in stone...|blackout]]]
+
+]]]]]]]]
+
+&lt;style&gt;
+tw-story {
+  background-color: #240f12;
+  color: #F1D788;
+}
+
+
+#titleh1 {
+  text-shadow: 0px 1px 1px black;
+	color: #070000;
+	font-family: &quot;IM Fell English SC&quot;, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 1;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="33" name="broom" tags="" position="3800,2000" size="100,100">You grab the shop broom and jab wildly at the tentacles, hooting and shouting nonsense.
+
+“No need for that, just remain calm—” A flurry of swings catch him squarely in the face. huffs away bits of dust and straw from his mouth. “//The book//! Aim for the book!.”
+
+You don&#39;t know why you should care but Gale&#39;s disapproving glare makes your panic worse. The air thickens like syrup around your head. Confused and scared, you huff and puff untill the room spins. 
+
+* [[Give in to the lightheadedness...|memory]]
+(set: $broomhit to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="34" name="chair" tags="" position="3500,2000" size="100,100">You grab a chair from behind the counter.
+
+“Uh, easy there, $name... No need to summon a fire elemental to roast a marshmallow...&quot; He says warily but you don’t hear him. 
+
+In an adrenaline-fueled fit, you swing the chair like a barbarian and smash it down on the writhing mass of tentacles engulfing him. There’s a sharp crack of splintering wood. The book flies from his hand and hits the floor with a thud.
+
+In an instant, the tentacles slither back into the pages like ink being sucked into paper. As the shop falls silent, your nerves begin to settle.
+
+Face down on the floor, Gale&#39;s limbs are splayed like a dropped marionette. He groans as he pushes himself up, joints creaking in protest.
+
+* [[&quot;What in the seven hells was that?!&quot;|turningpoint]]
+
+(set: $galeFree to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="35" name="punch" tags="" position="3650,2000" size="100,100">Breath shallow and vision swimming, you take the only logical next step: put your dukes up and take a swing at the tentacles.
+
+&quot;OW! //Khelben&#39;s fat AUNT!//&quot; He yells as your fist connects with his ear. A red rivulet trickles down his neck, and you hear a soft plink as something small hits the floor. A flash of horror crosses his face. 
+
+&quot;Am I bleeding?&quot; He looks mournfully at his earring now lying between his boots.
+
+&quot;Just stay calm! I got this!&quot; You declare with delusional confidence as you crack your knuckles preparing for a second try.
+
+&quot;Oh, you&#39;ve got this, you say? You&#39;ve just punched me in the bloody ear! You are so far from //having this// you&#39;d need to charter a ship, hire a guide, and petition for Tymora&#39;s blessing just to glimpse //IT//!&quot;
+
+You don&#39;t know why you should care but Gale&#39;s disapproving glare makes your panic worse. The air thickens like syrup around your head. Confused and scared, you huff and puff untill the room spins. 
+
+* [[Give in to the lightheadedness.|memory]]
+
+{(set: $gale_loses_earring to &quot;true&quot;)(set: $earpunch to &quot;true&quot;)}
+</tw-passagedata><tw-passagedata pid="36" name="getuout" tags="" position="2950,2275" size="100,100">He shifts slightly, his restrained hands flexing. “These tentacles are an anti-theft measure. My hand is practically fused to the book. I think I can get out, but only if you take it from me. Can you do that?”
+
+You nod, but your heart races.
+
+&quot;Wonderful. Now, come here and take it from me.&quot;
+
+The tentacles writhe and you hesitate. Just looking at them makes your skin crawl.
+
+&quot;I can&#39;t look at it.&quot;
+
+Gale’s expression hardens, frustration flickering briefly. &quot;That&#39;s fine. You don&#39;t have to. Just look away, inch forward, and smack it out of my hand.&quot;
+* [[Cover your eyes.|bagonurhead]]
+{(if: $baghead is &quot;true&quot;)[(text-colour:#ffe066)[►] [[You notice the shopping bag on the floor.|bagonurhead]]]} 
+
+</tw-passagedata><tw-passagedata pid="37" name="turningpoint" tags="" position="3125,2450" size="100,100">{(If: $nab is &quot;true&quot;)[You smack the book out of Gale’s hands. Instantly, the tentacles shudder and vanish, retreating into the book. He sags with relief, rolling his shoulders and stretching his arms with an audible series of pops.]}
+&quot;By all the gods, that’s better,&quot; he groans, rolling his shoulders. &quot;I was starting to lose feeling in my legs.&quot;
+
+You lean back onto one of the shelves and take a moment to catch your breath. The room is a mess of splintered wood. The floor boards are broken in several places. It&#39;s going to cost a fortune to fix it. As Gale dusts himself off, you feel him watching you from the corner of your eye.
+
+&quot;So, $name tell me, how do you sell rare magical texts and not know what Evard&#39;s Black Tentacles looks like?&quot; 
+
+&quot;I just sell the books. I don&#39;t actually know anything about what&#39;s inside them.&quot;
+
+He raises his eyebrows. “It goes well beyond not knowing what&#39;s inside them.&quot;
+
+You shift under an uneasy flush of embarassment.
+
+“I’m not saying this to be cruel, but to provide you with a dose of reality: $name, you are out of your depth. You were a fool to even look at this book. You could seriously harm yourself--or worse! How did you even get your hands on this?&quot;
+
+* [[explain]]
+
+
+</tw-passagedata><tw-passagedata pid="38" name="&quot;Okay.&quot;" tags="" position="3450,225" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
+
+“&#39;Okay?&#39; Excellent. We’re off to a thrilling start.&quot;
+
+&quot;What?&quot;
+
+&quot;It&#39;s customary to respond with your name. You know, basic social etiquette.&quot;
+
+* [[&quot;Fine. You can call me...&quot;|yourname]]
+
+(set: $galescore to it -1)
+</tw-passagedata><tw-passagedata pid="39" name="Deny Book" tags="" position="2800,2000" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
+
+“Well then, I’m very sorry.”
+
+Before you can ask what he&#39;s sorry for. His hand lashes out, seizing the book. You gasp, stumbling backward as he wrenches it from your hands. There’s a shimmer of silvery light, a brief whorl of magic, and in an instant, he’s gone.
+
+You spin toward the door. He’s already there, materializing in a swirl of mist, but the moment his fingers graze the doorknob, the book emits a psychic screech that rattles through the marrow of your bones. A storm of black tendrils erupt from the book. Slick and writhing, they snare the wizard&#39;s limbs and coil around his torso like hungry snakes.
+
+There is a sinking feeling in your stomach and your hands feel tingly and damp. You catch a breath, but it stutters halfway down, and suddenly you can&#39;t seem to get enough. Your mind is scrambling to make distance from the sight in front of you.
+
+* [[Grab the broom.|broom]]
+* [[Punch it.|punch]]
+* [[Go for the chair behind the counter.|chair]]
+(set: $galescore to it -1)
+(set: $bookdenied to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="40" name="A date." tags="" position="2800,1600" size="100,100">&quot;Pardon?&quot;
+
+&quot;A date.&quot;
+
+He stares at you in silence. “You know, I find you very strange and chaotic.”
+
+* [[&quot;Does that mean no?&quot;]]
+
+
+</tw-passagedata><tw-passagedata pid="41" name="&quot;Does that mean no?&quot;" tags="" position="2800,1800" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
+
+“It means my tastes continue to be a concern to me but unfortunately, I don’t have time to wine and dine my way into possession of this book. I need it now.&quot;
+
+&quot;Fine, just the gold then.&quot;
+
+* [[&quot;100 gold.&quot;|100g]]
+* [[&quot;7,000 gold.&quot;|7000]]
+* [[&quot;10,000 gold.&quot; |10000g]]
+(set: $galescore to it +2)</tw-passagedata><tw-passagedata pid="42" name="bagonurhead" tags="" position="2800,2275" size="100,100">(text-colour:#ffe066)[◈ Gale Approves.]
+(if: $baghead is &quot;true&quot;)[You scramble to the back and grab the shopping bag, placing it on your head.
+
+&quot;Okay, that&#39;s not the choice I would have made but it //is// immensely satisfying.&quot; He comments 
+
+You take a few careful steps forward, hands extended like you&#39;re playing pin the tail on the donkey.
+
+“Good, good,&quot; Gale encourages, his voice too chipper for the situation. &quot;Just a bit closer. Almost there. Okay, stop. You&#39;re right in front of the book now. Just reach out and grab it.”
+
+You hesitate. He catches the pause.
+
+“Right,,&quot; he sighs, looking pained. &quot;Just think of it as... uh, a cursed relay baton!”
+
+“But, relay batons become the next person’s problem...”
+
+“Ah, right... well, uh, maybe think of it as... a magical... hot potato? Just—” He falters, searching for another analogy. “Look, you’ve got this. Just grab the damn book... I can’t do this alone.”
+
+You take another step, forcing your eyes to stay on his hands, the writhing chaos peaking out from under the bag&#39;s hem. Each move feels like you’re losing ground, but you push forward.](else:)[You take a few careful steps forward, hands extended like you&#39;re playing pin the tail on the donkey.
+
+“Good, good,&quot; Gale encourages, his voice too chipper for the situation. &quot;Just a bit closer. Almost there. Okay, stop. You&#39;re right in front of the book now. Just reach out and grab it.”
+
+You hesitate. He catches the pause.
+
+“Right,,&quot; he sighs, looking pained. &quot;Just think of it as... uh, a cursed relay baton!”
+
+“But, relay batons become the next person’s problem...”
+
+“Ah, right... well, uh, maybe think of it as... a magical... hot potato? Just—” He falters, searching for another analogy. “Look, you’ve got this. Just grab the damn book... I can’t do this alone.”
+
+You take another step, forcing your eyes to stay on his hands, the writhing chaos peaking out from under the bag&#39;s hem. Each move feels like you’re losing ground, but you push forward.]
+
+* [[Nab the book.|turningpoint]]
+(set: $galescore to it +2)
+(set: $nab to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="43" name="explain" tags="" position="3050,2600" size="100,100">You rest the broom against the wall and slide down to rest on the floor.
+
+“A man stumbled into the shop. Reeked like something had died in his coat. Bloodshot eyes, wild hair—didn’t say hello, didn’t even look around. Just marched straight up to the counter and started barking, ‘Heads or tails? Heads or tails?’
+
+I had no idea what was happening. Thought maybe he&#39;d been eating some weird mushrooms. I told him to leave—I said, ‘I’m not playing your game. Get out.’
+
+Next thing I know, he’s got my face shoved down against the front desk, practically foaming at the mouth, screaming ‘Heads or tails?!’ over and over. So I shouted ‘Tails!’ just to get him off me.
+
+He slams a nib on the counter, griffon side up, and then he let go. Straightened up like I’d just answered a riddle. Then he pulls this book out, sets it on the counter, and walks to the door. I ask him what the hell it is, and he says, dead serious: ‘Cookbook.’
+
+Then he left. That’s it. That’s how I got the damn thing.”
+
+Gale considers your story and looks to be in a better mood after hearing it.
+
+&quot;So, it appears the book requries a game to be won to transfer ownership. And that man used a coin toss guessing game. On the bright side, that&#39;s a pretty easy requirment to fulfill.&quot; 
+
+* [[.Let&#39;s play rock, paper, scissors|RPS]]
+
+
+(set: $playerChoice to &quot;&quot;)
+(set: $computerChoice to &quot;&quot;)
+(set: $result to &quot;&quot;)</tw-passagedata><tw-passagedata pid="44" name="&quot;Sorry. It has to be 10,000.&quot;" tags="" position="3825,1425" size="100,100">(text-colour:#ffe066)[◈ Gale Disapproves.]
+
+You can almost hear the frantic abacus clattering in his head, weighing rent, groceries, and dignity against the price of the book. You catch his eyes darting to the windows outside again.
+
+He walks to the front counter and grabs your quill. He wipes his sweating palms on his robe before pulling out a little book. With a shaky hand, he writes:
+
+(align:&quot;=&gt;&lt;=&quot;)[&lt;div class=&quot;galescheck&quot;&gt;//Pay to the order of $name...Ten-Thousand Gold...//&lt;div&gt;]
+
+Your eyes go wide. You&#39;ve never seen so much money come through your shop in one month let alone one day. 
+
+&quot;You drive a hard bargain. Take this to Sword Coast Traders&#39; Bank. They will...uh...dispense the funds.&quot;
+
+The last part sounds more like a question than a statement but you ignore it.
+
+[[Pretend you know exactly how banks work and nod sagely.|cool]]
+
+&lt;style&gt;
+.galescheck {
+color: black;
+font-family: &quot;Beth Ellen&quot;, cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="45" name="findenchant" tags="" position="3400,2275" size="100,100">“Well, look no further than the mirror, then!” he snaps. “For reasons bafflingly beyond even my vast expertise, this magic is tied to you. Which means, like it or not, you are my only hope of getting out of here.”
+
+&quot;Wait—how did //I// do this?&quot;
+
+&quot;I haven&#39;t the foggiest.&quot; He glares at the book clenched in his restrained hands. “But the fact that you&#39;ve handled it without setting off this enchantment means it’s attuned to you somehow. And if it’s attuned to you, then congratulations—you’ve enchanted it. Probably without even realizing.”
+
+* [[&quot;Okay, so how do we get you out?&quot;|getuout]]</tw-passagedata><tw-passagedata pid="46" name="useurmagic" tags="" position="3175,2275" size="100,100">&quot;I&#39;m flattered you think I&#39;m a font of endless power, but magic requires control, finesse, and my hands... Not to mention, this is clearly more than just a simple spell. If it were that easy, I&#39;d already be out of here.&quot;
+
+* [[&quot;Okay, so how do we get you out?&quot;|getuout]]</tw-passagedata><tw-passagedata pid="47" name="Untitled Passage 1" tags="" position="2425,1400" size="100,100">“A lie spread often enough with money to attend it becomes as much truth as a coin is round” – Common:- an Amnian saying about purposely spreading rumours (Lands of Intrigue by Steven E. Schend)
+
+
+“A sharp appearance is more deadly than a sharp sword” – Common:- an elven witticism (Aurora’s Whole Realms Catalogue by Tim Beach, Karen S. Boomgarden, Anne Brown, David “Zeb” Cook, Jeff Grubb, Julia Martin, Colin McComb, Thomas M. Reid, Steven E. Schend)
+
+
+“about as bold as ditchweed” – Common:- an Amnian expression of disgust at cowardice (Volo’s Guide to Baldur’s Gate II by Ed Greenwood)</tw-passagedata><tw-passagedata pid="48" name="RPS" tags="" position="2900,2725" size="100,100">You and Gale square off, hands hovering in anticipation.
+
+“Rock, paper, scissors,” you chant in unison, fists bobbing.
+
+You choose:
+
+(link: &quot;Rock&quot;)[
+  (set: $playerChoice to &quot;Rock&quot;)
+  (goto: &quot;RPSResult&quot;)
+]
+(link: &quot;Paper&quot;)[
+  (set: $playerChoice to &quot;Paper&quot;)
+  (goto: &quot;RPSResult&quot;)
+]
+(link: &quot;Scissors&quot;)[
+  (set: $playerChoice to &quot;Scissors&quot;)
+  (goto: &quot;RPSResult&quot;)
+]
+</tw-passagedata><tw-passagedata pid="49" name="RPSResult" tags="" position="2900,2850" size="100,100">{(set: $computerChoice to (either: &quot;Rock&quot;, &quot;Paper&quot;, &quot;Scissors&quot;))}
+Gale throws $computerChoice. You choose $playerChoice.
+{(if: $playerChoice is $computerChoice)[(set: $result to &quot;tie&quot;)]
+(else-if: $playerChoice is &quot;Rock&quot; and $computerChoice is &quot;Scissors&quot;)[(set: $result to &quot;win&quot;)]
+(else-if: $playerChoice is &quot;Paper&quot; and $computerChoice is &quot;Rock&quot;)[(set: $result to &quot;win&quot;)]
+(else-if: $playerChoice is &quot;Scissors&quot; and $computerChoice is &quot;Paper&quot;)[(set: $result to &quot;win&quot;)](else:)[(set: $result to &quot;loss&quot;)]}
+(if: $result is &quot;loss&quot;)[[[&quot;Yes! I&#39;m a loser!&quot; You cheer.|next]]]
+(else-if: $result is &quot;tie&quot;)[&quot;Great minds think alike I guess.&quot;
+
+[[&quot;Let&#39;s go again.&quot;|RPS]]]
+(else-if: $result is &quot;win&quot;)[You frown. &quot;Never thought winning could feel so bad.&quot;
+
+[[&quot;We&#39;ll go all night if we have to.&quot;|RPS]]]
+</tw-passagedata><tw-passagedata pid="50" name="next" tags="" position="3100,2900" size="100,100">“I never expected it to be this easy.”
+
+Gale shrugs. “Sometimes the best solution is the simplest.”
+
+“So, I just hand it over to you now?”
+
+&quot;Let&#39;s try.” Holding his hand out for the book, he wiggles his fingers in anticipation.
+
+With cautious optimism, you place it in his hand. You think you feel the shop getting lighter already.
+
+His fingers curl around the door handle as he did before, he makes a hum of approval but as he presses the lever, the book shudders in his grip and black tentacles erupt from the cover, coiling around his arm once again.
+
+Without thinking, you snatch the broom and swat the book from his hand. The tentacles vanish before it clatters to the floor. You slump against the wall with a sigh.
+
+&quot;Why didn&#39;t it work?&quot; You look to the wizard for an explanation, but his attention is on the street outside.
+
+&quot;I suppose it&#39;s possible that the terms to transfer the book have changed.&quot;
+
+&quot;Changed? To what?&quot;
+
+“I don’t know, and I don’t have the time to figure it out.” He says still staring out the window. You try to peak at what his attention has. It is a woman half-hidden in a soaked cloak standing just beyond the glass, her eyes locked on the shop.
+
+“You’ll be returning my gold now.”
+
+“Yes, fairs fair.” You pull the paper from your pocket and hand it to him, he tugs at it but you don’t release it from your fingers. Once he’s gone, you’re on your own.
+
+“Listen, I could read every single book in this shop six times over, and I’d still never figure out how to get rid of this thing.” A bitter taste coats your tongue, you hate that you’re begging. “And if that ego’s anything to go by…”
+
+Gale quirks an eyebrow.
+
+“I mean, you’re annoyingly knowledgeable—”
+
+“Please, continue.” He folds his arms across his chest as he watches you insert your foot even deeper into your mouth.
+
+“What I’m struggling to say is... I could really use your help. With magic.”
+“Oh, no,” he shakes his head. “I have never seen anyone—layman or otherwise—faint like a damsel at the mere sight of magic.”
+
+“Just the basics to get me started then.”  You put your palms together in front of your face. “Please.”
+
+His attention returns to the woman, who now seems to be mouthing words through the glass.
+
+“Your problem isn’t lack of education; it’s a phobia.” He squints at the woman and continues, “A visceral fear of magic itself a concept that is completely alien to me. I wouldn’t even know how to begin teaching you the basics when casting something like Dancing Lights leaves you concussed.”
+
+The woman starts knocking on the glass. She rounds the corner of the shop and is now pounding furiously on the door. She’s crying and frantic.
+
+[[Open the door.]]
+
+
+
+</tw-passagedata><tw-passagedata pid="51" name="Untitled Passage 2" tags="" position="2600,2125" size="100,100">(set: $baghead to &quot;true&quot;) [[&quot;Okay, so how do we get you out?&quot;|getuout]]</tw-passagedata><tw-passagedata pid="52" name="Open the door." tags="" position="3300,3000" size="100,100">&quot;No,&quot; he warns. &quot;Don&#39;t open the—&quot;
+
+The door crashes open, and the woman barrels inside howling and weeping as she throws herself at Gale. “Goblins! My baby—please, help! Help! HELP!”
+
+You try to calm her down and steer her back toward the door, but she clings to Gale, fingers clawing into his arms.
+
+“What in the hells is going on? Do you know this woman?” you demand. &quot;Ma&#39;am, perhaps you should call the watch?&quot;
+
+&quot;No! Only he can save us!&quot;
+
+Gritting his teeth, he tries to push her away by her shoulders but her fingers dig deeper. Her cries become uncontrolled shrieking pleas for help. His voice slices through the chaos. For a heartbeat, everything is still. 
+
+Then, with a flick of his fingers, a faint glow pulses beneath her skin. She stiffens, then collapses, crumbling into a pile of ash.
+
+Your breath catches. Your mind races. “Gale, how could you—you—You killed her!”
+
+“It’s not what it looks like!” he snaps, his voice taut with panic. He looks at you, eyes wild, then shoves past, vanishing out into the street.
+
+---
+
+To be continued
+5/11/2025</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
